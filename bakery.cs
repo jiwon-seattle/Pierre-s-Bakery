@@ -52,7 +52,7 @@ public class Bakery {
     {
         Pastry maccaron = new Pastry();
         maccaron.Name = "Maccaron";
-        maccaron.Price = 5;
+        maccaron.Price = 2;
         maccaron.Loaves = 10;
         Pastries.Add(maccaron);
 
@@ -95,10 +95,15 @@ public class Bread
 
    public int Buying (int loaves) 
    {
-       
+       if (loaves >= 2)
+       {
+           return (loaves / 2) * Price + (loaves % 2) * Price;
+       }
+       else
+       {
        return Price * loaves;
+       }
    }
-        
 }
 
 public class Pastry {
@@ -109,7 +114,14 @@ public class Pastry {
 
    public int Buying (int loaves)
    {
-       return Price * loaves;
+       if (loaves >= 3)
+       {
+           return (loaves / 3) * 5 + (loaves % 2) * Price;
+       }
+       else
+       {
+           return loaves * Price;
+       }
    }
 
 }
