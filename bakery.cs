@@ -10,16 +10,28 @@ public class Bakery {
         Bread bagel = new Bread();
         bagel.Name ="Bagel";
         bagel.Price = 5;
-        bagel.Loaves = 10;
+        bagel.Loaves = 100;
         Breads.Add(bagel);
+        
+        Bread ryeBread = new Bread();
+        ryeBread.Name = "Rye bread";
+        ryeBread.Price = 7;
+        ryeBread.Loaves = 100;
+        Breads.Add(ryeBread);
 
         Pastry maccaron = new Pastry();
         maccaron.Name = "Maccaron";
         maccaron.Price = 2;
-        maccaron.Loaves = 10;
+        maccaron.Loaves = 100;
         Pastries.Add(maccaron);
 
-        Console.WriteLine("Welcome to Pierre's Bakery");
+        Pastry danish = new Pastry();
+        danish.Name = "Danish";
+        danish.Price = 3;
+        danish.Loaves = 100;
+        Pastries.Add(danish);
+        
+        Console.WriteLine("Welcome to Pierre's Bakery!");
         Console.WriteLine("Would you like to get some fresh bakeries? Please answer with this format, Y for Yes & N for N");
 
         string userVisitAnswer = Console.ReadLine().ToLower();
@@ -42,10 +54,7 @@ public class Bakery {
 
     static void BreadBrowsing()
     {
-        // foreach(Bread bread in Breads)
-        //     {
-        Console.Write("We have " + Breads[0].Name + " in the bread section." + " The price is $" + Breads[0].Price + ".");
-            // }
+        Console.Write("We have " + Breads[0].Name + " and " + Breads[1].Name + " in the bread section." + " The price is $" + Breads[0].Price + ", $" + Breads[1].Price + " per each.");
     }
 
     static void PastryBrowsing()
@@ -53,15 +62,25 @@ public class Bakery {
         Console.WriteLine(" For the pastry section, We also have " + Pastries[0].Name + " with the price for each $" + Pastries[0].Price + ".");
     }
 
-    static void BreadShopping()
+    static int BreadPrice()
     {
-        Console.Write("Would you like to buy some breads? Enter a number that you want to get.");
+        Console.Write("Would you liek to buy some breads? Enter a number that you want to get.");
         int userBreadNumber = int.Parse(Console.ReadLine());
+        return userBreadNumber;
+    }
+    static void BreadShopping()
+    {   
+        Dictionary<string, int> Breadstype = new Dictionary<string, int> {};
+        Breadstype.Add(Breads[0].Name, Breads[0].Price);
+
+        
+        int userBreadNumber = BreadPrice();
 
         if(Breads[0].outOfStock(userBreadNumber))
         {
             int stocks = Math.Abs(userBreadNumber - Breads[0].Loaves);
-            Console.WriteLine("Sorry, we are out of stock for your order. Breads are available for " + stocks);
+            Console.WriteLine("Sorry, some breads are out of stock for youe order. " + stocks + " bread/s are not available.");
+            Console.WriteLine("Available " + Breads[0].Loaves + "'s cost is " + Breads[0].Buying(Breads[0].Loaves));
         }
         else
         {
@@ -71,20 +90,19 @@ public class Bakery {
 
     static int PastryPrice()
     {
-        
+        Console.Write("Would you like to buy some pastries? Enter a number that you want to get.");
         int userPastryNumber = int.Parse(Console.ReadLine());
         return userPastryNumber;
     }
     static void PastryShopping()
     {
-        Console.Write("Would you like to buy some pastries? Enter a number that you want to get.");
-        PastryPrice();
         int userPastryNumber = PastryPrice();
 
         if(Pastries[0].outofStock(userPastryNumber))
         {
             int stocks = Math.Abs(userPastryNumber - Pastries[0].Loaves);
-            Console.WriteLine("Sorry, we are out of stock for your order. Pastries are available for " + stocks);
+            Console.WriteLine("Sorry, some pastries are out of stock for your order. " + stocks + " pastry/ies are not available.");
+            Console.WriteLine("Available " + Pastries[0].Loaves + "'s cost is " + Pastries[0].Buying(Pastries[0].Loaves));
         }
         else
         {
