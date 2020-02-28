@@ -37,8 +37,6 @@ public class Bakery {
             Console.WriteLine("Thank you for visiting Pierre's Bakery. We are looking forward to seeing you next time!");
         }
         
-        
-
 
     }
 
@@ -59,15 +57,42 @@ public class Bakery {
     {
         Console.Write("Would you like to buy some breads? Enter a number that you want to get.");
         int userBreadNumber = int.Parse(Console.ReadLine());
+
+        if(Breads[0].outOfStock(userBreadNumber))
+        {
+            int stocks = Math.Abs(userBreadNumber - Breads[0].Loaves);
+            Console.WriteLine("Sorry, we are out of stock for your order. Breads are available for " + stocks);
+        }
+        else
+        {
         Console.WriteLine("The cost is " + Breads[0].Buying(userBreadNumber) + ".");
+        }
     }
 
+    static int PastryPrice()
+    {
+        
+        int userPastryNumber = int.Parse(Console.ReadLine());
+        return userPastryNumber;
+    }
     static void PastryShopping()
     {
         Console.Write("Would you like to buy some pastries? Enter a number that you want to get.");
-        int userPastryNumber = int.Parse(Console.ReadLine());
+        PastryPrice();
+        int userPastryNumber = PastryPrice();
+
+        if(Pastries[0].outofStock(userPastryNumber))
+        {
+            int stocks = Math.Abs(userPastryNumber - Pastries[0].Loaves);
+            Console.WriteLine("Sorry, we are out of stock for your order. Pastries are available for " + stocks);
+        }
+        else
+        {
         Console.WriteLine("The cost is " + Pastries[0].Buying(userPastryNumber) + ".");
+        }
     }
+    
+   
 }
 public class Bread 
 {
