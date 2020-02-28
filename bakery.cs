@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 
 public class Bakery {
-
-    public string Bread;
-    public string Pastry;
+    public static List<Bread> Breads = new List<Bread>() {};
+    public static List<Pastry> Pastries = new List<Pastry> () {};
 
     static void Main()
     {
@@ -36,7 +35,9 @@ public class Bakery {
         bagel.Price = 5;
         bagel.Loaves = 10;
 
-        List<Bread> Breads = new List<Bread>() {bagel};
+        Breads.Add(bagel);
+
+        
 
         // foreach(Bread bread in Breads)
         //     {
@@ -53,8 +54,9 @@ public class Bakery {
         maccaron.Name = "Maccaron";
         maccaron.Price = 5;
         maccaron.Loaves = 10;
+        Pastries.Add(maccaron);
 
-        List<Pastry> Pastries = new List<Pastry> () {maccaron};
+
 
         Console.Write("We have " + Pastries[0].Name + " in the pastry section. " + "The price is $" + Pastries[0].Price + ".");
         Console.Write(" Would you buy some " + Pastries[0].Name + "?" + " Please enter a number that you want to get");
@@ -64,12 +66,25 @@ public class Bakery {
     }
 
 
-    static void BakeryShopping()
-    {
+    // static void BakeryShopping()
+    // {
        
         
-     
-    }
+    //     List<Pastry> Pastries = new List<Pastry> () {pastry};
+           
+
+    //     Console.WriteLine("Please enter a bakery type and numbers");
+    //     int userBakery = int.Parse(Console.ReadLine());
+
+            
+
+    //         foreach(Pastry pastries in Pastries)
+    //         {
+    //             Console.Write(pastry.Name);
+    //             Console.Write(pastry.Price);
+    //             // Console.WriteLine(pastry.Loaves);
+    //         }
+    // }
 }
 public class Bread 
 {
