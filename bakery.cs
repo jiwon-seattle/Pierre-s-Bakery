@@ -62,6 +62,20 @@ public class Bakery {
         Console.WriteLine(" For the pastry section, We also have " + Pastries[0].Name + " with the price for each $" + Pastries[0].Price + ".");
     }
 
+    static string BreadType()
+    {
+        Dictionary<string, List<Pastry>> Breadstype = new Dictionary<string, List<Pastry>> {};
+
+        Console.WriteLine("Please enter a bread type that you want to buy.");
+        string userBreadType = Console.ReadLine();
+
+        Breadstype.Add(Breads[0].Name, Breads[0].Price);
+        Breadstype.Add(Breads[1].Name, Breads[1].Price);
+
+        int userBreadPrice = Breadstype[userBreadType];
+
+        return userBreadType;
+    }
     static int BreadPrice()
     {
         Console.Write("Would you liek to buy some breads? Enter a number that you want to get.");
@@ -70,10 +84,8 @@ public class Bakery {
     }
     static void BreadShopping()
     {   
-        Dictionary<string, int> Breadstype = new Dictionary<string, int> {};
-        Breadstype.Add(Breads[0].Name, Breads[0].Price);
-
         
+        string userBreadtype = BreadType();
         int userBreadNumber = BreadPrice();
 
         if(Breads[0].outOfStock(userBreadNumber))
