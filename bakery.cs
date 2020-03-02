@@ -13,14 +13,10 @@ namespace Bakeryshop
       {
 
           Bread bagel = new Bread("Bagel", 5, 100);
-          Bread ryeBread = new Bread("Rye bread", 7, 100);
           Breads.Add(bagel);
-          Breads.Add(ryeBread);
 
           Pastry maccaron = new Pastry("Maccaron", 2, 100);
-          Pastry danish = new Pastry("Danish", 3, 100);
           Pastries.Add(maccaron);
-          Pastries.Add(danish);
 
           Console.WriteLine("Welcome to Pierre's Bakery!");
           Console.WriteLine("Would you like to get some fresh bakeries? Please answer with this format, Y for Yes & N for N");
@@ -39,8 +35,6 @@ namespace Bakeryshop
           {
               Console.WriteLine("Thank you for visiting Pierre's Bakery. We are looking forward to seeing you next time!");
           }
-
-
       }
 
       static void BreadBrowsing()
@@ -53,20 +47,6 @@ namespace Bakeryshop
           Console.WriteLine(" For the pastry section, We also have " + Pastries[0].GetPastryName() + " with the price for each $" + Pastries[0].GetPrice() + ".");
       }
 
-      // static string BreadType()
-      // {
-      //     Dictionary<string, List<Pastry>> Breadstype = new Dictionary<string, List<Pastry>> {};
-      //
-      //     Console.WriteLine("Please enter a bread type that you want to buy.");
-      //     string userBreadType = Console.ReadLine();
-      //
-      //     Breadstype.Add(Breads[0].Name, Breads[0].Price);
-      //     Breadstype.Add(Breads[1].Name, Breads[1].Price);
-      //
-      //     int userBreadPrice = Breadstype[userBreadType];
-      //
-      //     return userBreadType;
-      // }
       static int BreadPrice()
       {
           Console.Write("Would you liek to buy some breads? Enter a number that you want to get.");
@@ -76,8 +56,6 @@ namespace Bakeryshop
       }
       static void BreadShopping()
       {
-
-          // string userBreadtype = BreadType();
           int userBreadNumber = BreadPrice();
 
           if(Breads[0].outOfStock(userBreadNumber))
