@@ -11,13 +11,13 @@ This C# program allows a user browse a bread and pastry and decide buying.
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **A user could choose the option of playing a game or not** | Input: "Would you like to play a riddle game with Spynx? [Yes for Y / No for N]" | Output: "Y for starting a game", "N for exiting a game" |
-| **A user could play a riddle game and given a information when they lose** | Input: "I’m tall when I’m young, and I’m short when I’m old. What am I -> Kid (incorrect answer)"  | Output: "Answer is not correct. You are my tomorrow breakfast" |
-| **A user could play a riddle game and given a information when they win** | Input: "What is always in front of you but can’t be seen? -> The future (correct answer)"  | Output: "You win!" |
-| **A user is given a option that you want to play again after finishing a round** | Input: "Would you like to play again? [Yes for Y / No for N]"  | Output: "Y for a Main game", "N for exiting a game" |
+| **A user could decide if the user shop or not** | Input: "Would you like to get some fresh bakeries? Please answer with this format, Y for Yes & N for N" | Output: "Y for starting a bakery shopping", "N for exiting an application" |
+| **A user could receive bakery information** | Input: "Y for shopping"  | Output: "Bread and Pastry information in detail" |
+| **A user could decide how many breads and pastries they want to get** | Input: "Would you liek to buy some breads/pastries? Enter a number that you want to get."  | Output: "5 for breads / 7 for pastries" |
+| **A user could receive some discounts for breads and pastries** | Input: "If you buy 2 breads, you can get 1 for free. / If you buy 3 pastries, it is 5 dollars in total!"  | Output: "3 breads for 10 dollars / 3 pastries for 5 dollars" |
 
 ## Setup/Installation Requirements
-1. Clone this repository, https://github.com/jiwon-seattle/Riddles-of-the-Sphinx.git.
+1. Clone this repository, https://github.com/jiwon-seattle/Pierre-s-Bakery.git.
 3. Run this application with a command $ dotnet run. 
 
 ## Known Bugs
