@@ -30,11 +30,6 @@ namespace Bakeryshop.Pastries
        return Loaves;
      }
 
-     // public int SetPrice(int newPrice)
-     // {
-     //   Price = price;
-     // }
-
      public int Buying (int loaves)
      {
          if (loaves >= 3)
