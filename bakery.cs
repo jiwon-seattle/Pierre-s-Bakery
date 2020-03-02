@@ -38,7 +38,7 @@ namespace Bakeryshop
 
       static void BreadBrowsing()
       {
-          Console.Write("We have " + Breads[0].GetBreadName() + " and " + Breads[1].GetBreadName() + " in the bread section." + " The price is $" + Breads[0].GetPrice() + ", $" + Breads[1].GetPrice() + " per each.");
+          Console.Write("We have " + Breads[0].GetBreadName() + " in the bread section." + " The price is $" + Breads[0].GetPrice() + ".");
       }
 
       static void PastryBrowsing()
@@ -48,7 +48,7 @@ namespace Bakeryshop
 
       static int BreadPrice()
       {
-          Console.Write("Would you liek to buy some breads? Enter a number that you want to get.");
+          Console.Write("Would you like to buy some breads? Enter a number that you want to get.");
           Console.WriteLine(" If you buy 2 breads, you can get 1 for free.");
           int.TryParse(Console.ReadLine(), out int userBreadNumber);
           return userBreadNumber;
