@@ -1,0 +1,47 @@
+[33mcommit 1149119404d8c03bcdc66d4a759622465c858a6d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Student <example@example.com>
+Date:   Fri Feb 28 16:12:40 2020 -0800
+
+    Functions
+
+[33mcommit 8c24b363b7db590e872eb4967dc780ca3eea4479[m
+Author: Student <example@example.com>
+Date:   Fri Feb 28 13:22:48 2020 -0800
+
+    Add dictionary
+
+[33mcommit 68a601b10f3feb307bce5a5732456642e0028c86[m
+Author: Student <example@example.com>
+Date:   Fri Feb 28 12:28:49 2020 -0800
+
+    Adding other functions
+
+[33mcommit 159403693a93e27dd8a7aa8c1900b1369c5dafeb[m
+Author: Student <example@example.com>
+Date:   Fri Feb 28 12:05:33 2020 -0800
+
+    Divide section for bread and pastry
+
+[33mcommit 00c2bf44b7ba77fab1bad4f2007c42b54632b3a3[m
+Author: Student <example@example.com>
+Date:   Fri Feb 28 11:50:06 2020 -0800
+
+    Add sale int class
+
+[33mcommit ab4f05ff56d9dc22e1c6b9ec269a781e582ac717[m
+Author: Student <example@example.com>
+Date:   Fri Feb 28 11:21:53 2020 -0800
+
+    Complete List for bread and pastries
+
+[33mcommit 603d738f78f2f4f85f05c4937672f6200b50198f[m
+Author: Student <example@example.com>
+Date:   Fri Feb 28 11:10:43 2020 -0800
+
+    Complete bread and pastry class
+
+[33mcommit 8d299ce4796c77774f5c74713368fa2ecf5b1b8a[m
+Author: Student <example@example.com>
+Date:   Fri Feb 28 09:22:48 2020 -0800
+
+    Create Bakery.cs
