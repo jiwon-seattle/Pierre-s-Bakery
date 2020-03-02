@@ -24,7 +24,6 @@ namespace Bakeryshop
 
           if (userVisitAnswer == "y")
           {
-
               BreadBrowsing();
               PastryBrowsing();
               BreadShopping();
