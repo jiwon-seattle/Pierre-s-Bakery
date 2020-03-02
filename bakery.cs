@@ -11,7 +11,6 @@ namespace Bakeryshop
 
       static void Main()
       {
-
           Bread bagel = new Bread("Bagel", 5, 100);
           Breads.Add(bagel);
 
