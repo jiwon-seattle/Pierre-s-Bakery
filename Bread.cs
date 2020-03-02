@@ -4,7 +4,6 @@ namespace Bakeryshop.Breads
 {
   public class Bread
   {
-
      private string Name;
      private int Price;
      private int Loaves;
