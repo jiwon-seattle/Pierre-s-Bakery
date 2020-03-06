@@ -1,4 +1,4 @@
-# Pierre-s-Bakery
+# [Pierre-s-Bakery](https://github.com/jiwon-seattle/Pierre-s-Bakery.git)
 
 #### An console application that user would shop bakeries. 3/2/20
 
@@ -17,7 +17,8 @@ This C# program allows a user browse a bread and pastry and decide buying.
 | **A user could receive some discounts for breads and pastries** | Input: "If you buy 2 breads, you can get 1 for free. / If you buy 3 pastries, it is 5 dollars in total!"  | Output: "3 breads for 10 dollars / 3 pastries for 5 dollars" |
 
 ## Setup/Installation Requirements
-1. Clone this repository, https://github.com/jiwon-seattle/Pierre-s-Bakery.git.
+1. Download [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/)
+2. Clone this repository, https://github.com/jiwon-seattle/Pierre-s-Bakery.git.
 3. Run this application with a command $ dotnet run. 
 
 ## Known Bugs
@@ -25,14 +26,15 @@ This C# program allows a user browse a bread and pastry and decide buying.
 
 ## Technologies Used
 * C#
-* .NET Core
+* [.NET Core](https://dotnet.microsoft.com/download/dotnet-core/)
+* Markdown
 
 ## Support and contact details
 
-_Email jiwon1.han@gmail.com with any questions, comments, or concerns._
+Email jiwon1.han@gmail.com with any questions, comments, or concerns.
 
 ### License
 
 *This software is licensed under the MIT license*
 
-Copyright (c) 2020 **_Jiwon Han_**
+Copyright (c) 2020 **Jiwon Han**
