@@ -1,6 +1,8 @@
 # [Pierre-s-Bakery](https://github.com/jiwon-seattle/Pierre-s-Bakery.git)
 
-#### An console application that user would shop bakeries. 3/2/20
+#### C# Individual Project for Basic C# at [Epicodus](https://www.epicodus.com/), 03.02.2020
+
+#### An console application that user would shop bakeries. 
 
 #### By **Jiwon Han**
 
