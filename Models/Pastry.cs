@@ -1,12 +1,10 @@
-using System;
-
-namespace Bakeryshop.Pastries
+namespace Bakeryshop.Models
 {
   public class Pastry {
 
-     private string Name;
-     private int Price;
-     private int Loaves;
+     public string Name {get; set;}
+     public int Price {get; set;}
+     public int Loaves {get; set;}
 
      public Pastry(string name, int price, int loaves)
      {
@@ -14,26 +12,6 @@ namespace Bakeryshop.Pastries
        Price = price;
        Loaves = loaves;
      }
-
-     public string GetPastryName()
-     {
-       return Name;
-     }
-
-     public int GetPrice()
-     {
-       return Price;
-     }
-
-     public int GetLoaves()
-     {
-       return Loaves;
-     }
-
-     // public int SetPrice(int newPrice)
-     // {
-     //   Price = price;
-     // }
 
      public int Buying (int loaves)
      {
