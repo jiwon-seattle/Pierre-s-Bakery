@@ -1,12 +1,11 @@
-using System;
-
-namespace Bakeryshop.Breads
+namespace Bakeryshop.Models
 {
   public class Bread
   {
-     private string Name;
-     private int Price;
-     private int Loaves;
+
+     public string Name {get; set;}
+     public int Price {get; set;}
+     public int Loaves {get; set;}
 
      public Bread(string name, int price, int loaves)
      {
@@ -15,26 +14,7 @@ namespace Bakeryshop.Breads
        Loaves = loaves;
      }
 
-     public string GetBreadName()
-     {
-       return Name;
-     }
-
-     public int GetPrice()
-     {
-       return Price;
-     }
-
-     public int GetLoaves()
-     {
-       return Loaves;
-     }
-
-     public void SetPrice(int newPrice)
-     {
-       Price = newPrice;
-     }
-
+    
      public int Buying (int loaves)
      {
          if (loaves >= 2)
@@ -46,7 +26,6 @@ namespace Bakeryshop.Breads
          return Price * loaves;
           }
      }
-
      public bool outOfStock (int loaves)
      {
          return (loaves > Loaves);
